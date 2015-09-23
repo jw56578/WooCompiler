@@ -50,7 +50,10 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="RegExDefinitions.cs" />
+    <Compile Include="FiniteAutomata\Automaton.cs" />
+    <Compile Include="FiniteAutomata\Automaton2.cs" />
+    <Compile Include="RegEx\Identifier.cs" />
+    <Compile Include="RegEx\RegExDefinitions.cs" />
     <Compile Include="TokenDefinitions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
