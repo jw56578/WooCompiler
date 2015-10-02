@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -52,6 +53,15 @@
   <ItemGroup>
     <Compile Include="FiniteAutomata\Automaton.cs" />
     <Compile Include="FiniteAutomata\Automaton2.cs" />
+    <Compile Include="FiniteAutomata\Automaton3.cs" />
+    <Compile Include="FiniteAutomata\CompoundMachine\CompoundMachine.cs" />
+    <Compile Include="FiniteAutomata\CompoundMachine\ZeroOrMoreOnesOrZeros.cs" />
+    <Compile Include="Functions.cs" />
+    <Compile Include="Parser\Parser2.cs" />
+    <Compile Include="Parser\PredictiveParser.cs" />
+    <Compile Include="Parser\RecursiveDecentCalculatorOnlyAdd.cs" />
+    <Compile Include="Parser\RecursiveDecentCalculator.cs" />
+    <Compile Include="Parser\Parser.cs" />
     <Compile Include="RegEx\Identifier.cs" />
     <Compile Include="RegEx\RegExDefinitions.cs" />
     <Compile Include="TokenDefinitions.cs" />

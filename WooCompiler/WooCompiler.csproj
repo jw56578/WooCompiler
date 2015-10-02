@@ -43,14 +43,26 @@
   <ItemGroup>
     <Compile Include="FiniteAutomata\AcceptsAnyNumberof1sFollowedBySingleZero.cs" />
     <Compile Include="FiniteAutomata\Automaton.cs" />
+    <Compile Include="FiniteAutomata\CompoundMachines\CompoundMachine.cs" />
+    <Compile Include="FiniteAutomata\CompoundMachines\ZeroOrMoreOnesOrZeros.cs" />
+    <Compile Include="FiniteAutomata\Concat.cs" />
+    <Compile Include="FiniteAutomata\Epsilon.cs" />
+    <Compile Include="FiniteAutomata\OnlyAcceptsSingle1.cs" />
+    <Compile Include="FiniteAutomata\SingleCharacter.cs" />
+    <Compile Include="FiniteAutomata\SingleSpecificCharacter.cs" />
+    <Compile Include="FiniteAutomata\State.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Parsing\RecursiveDescentParser.cs" />
     <Compile Include="RegEx\Identifier.cs" />
     <Compile Include="RegEx\RegExDefinitions.cs" />
     <Compile Include="TokenDefinition.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Parsing\Terminals\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
